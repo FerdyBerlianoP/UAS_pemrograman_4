@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/tvIdMinuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id"
+            android:text="Id"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Harga"
+            android:text="Harga"
+            android:layout_below="@id/tvIdMinuman"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tvMinuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minuman"
+            android:hint="Minuman"
+            android:textSize="15sp"
+            android:layout_below="@id/tvHarga"
+            />
+    </RelativeLayout>
+    <View
+        android:background="@color/purple_200"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+</LinearLayout>

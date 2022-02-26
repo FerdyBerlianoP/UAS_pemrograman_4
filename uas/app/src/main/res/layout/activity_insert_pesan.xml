@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_insert_pesan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activityweb.InsertActivityPesan">
+    <TextView
+        android:id="@+id/tvPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembeli : "
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvmakanan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makanan : "
+        android:layout_below="@id/tvPesan"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvMinuman2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minuman : "
+        android:layout_below="@id/tvmakanan2"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edtPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Pembeli"
+        android:layout_toRightOf="@+id/tvPesan"
+        android:layout_alignBaseline="@+id/tvPesan"/>
+    <EditText
+        android:id="@+id/edtMakanan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Makanan"
+        android:layout_toRightOf="@+id/tvmakanan2"
+        android:layout_alignBaseline="@+id/tvmakanan2"/>
+    <EditText
+        android:id="@+id/edtMinuman2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Minuman"
+        android:layout_toRightOf="@+id/tvMinuman2"
+        android:layout_alignBaseline="@+id/tvMinuman2"/>
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvMinuman2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btInsertingPesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"/>
+        <Button
+            android:id="@+id/btBackGoPesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+    </LinearLayout>
+</RelativeLayout>

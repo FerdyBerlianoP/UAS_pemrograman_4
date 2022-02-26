@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_insert_makanan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activityweb.InsertActivityMakanan">
+    <TextView
+        android:id="@+id/tvMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makanan : "
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga : "
+        android:layout_below="@id/tvMakanan"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edtMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Makanan"
+        android:layout_toRightOf="@+id/tvMakanan"
+        android:layout_alignBaseline="@+id/tvMakanan"/>
+    <EditText
+        android:id="@+id/edtHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Harga"
+        android:layout_toRightOf="@+id/tvHarga"
+        android:layout_alignBaseline="@+id/tvHarga"/>
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvHarga"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btInsertingMakanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"/>
+        <Button
+            android:id="@+id/btBackGoMakanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+    </LinearLayout>
+</RelativeLayout>

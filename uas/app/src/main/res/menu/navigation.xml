@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/homeyic"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/nav_order"
+        android:icon="@drawable/usrnote_ic"
+        android:title="@string/title_dashboard" />
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/tentangic"
+        android:title="@string/title_notifications"
+        />
+
+
+</menu>
